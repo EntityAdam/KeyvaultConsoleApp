@@ -1,0 +1,21 @@
+{
+  "profiles": {
+    "Local": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development",
+        "AZURE_KEYVAULT_URI": "https://mykeyvault.vault.azure.net/"
+      }
+    },
+    "Production": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Production",
+        "AZURE_CLIENT_ID": "guid",
+        "AZURE_CLIENT_SECRET": "secret",
+        "AZURE_TENANT_ID": "guid",
+        "AZURE_KEYVAULT_URI": "https://mykeyvault.vault.azure.net/"
+      }
+    }
+  }
+}
